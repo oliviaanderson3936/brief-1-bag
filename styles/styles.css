@@ -1,0 +1,88 @@
+/*Sets the inital properties for the webpage*/
+* {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+}
+/*Sets the font properties for all headings, paragraphs texts and links*/
+html, body {height: 100%;}
+body {font-family: 'Itim', cursive; color: #011627; background-color: #f5f5f5;}
+h1 {font-family: 'Pangolin', cursive; font-size: 2.5em;}
+h2 {font-family: 'Pangolin', cursive; font-size: 1.8em;}
+h3 {font-family: 'Pangolin', cursive; font-size: 1.25em;}
+p {font-size: 1em;}
+a {color: #011627;}
+
+/*nav - sets all of the properties for the navigation bar, such as each of the links and colours*/
+nav {
+    background-color: #f5f5f5;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 2px;
+    border-bottom:#15253f 2px solid;
+    margin-bottom: 4px;
+}
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+nav ul li {
+    display: block;
+    width: 200px;
+    float: left;
+    background-color: #f5f5f5;
+}
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 150px;
+    position: relative;
+    background-color: #f5f5f5;
+}
+nav ul li a:hover {
+    color: #2c3d5b;
+    font-weight: bold;
+}
+
+/*sections - sets the properties for the sections which hold the information about the product
+             floats the sections to the left*/
+section {
+    padding: 20px 0px;
+    float: left;
+    width: 50%;
+}
+#one {
+    float: left;
+    background-color: #dedee6;
+    width: 575px;
+}
+
+/*aside - the aside holds the main image of the product, the properties are outlined below*/
+aside {
+    float: right;
+    padding: 20px 0px;
+}
+
+/*css animations - the fade in animation has been used on the sections to enable an element of motion design into the UI.
+                   The keyframes change the opacity from 0 to 1. This meaning that when the page loads the text fades into the web page*/
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
